@@ -189,11 +189,12 @@
 
   /* FOOTER */
   footer{border-top:1px solid var(--line);padding:34px 0;}
-  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:14px;color:var(--muted);}
+  footer .wrap{display:flex;flex-direction:column;align-items:center;gap:18px;font-size:14px;color:var(--muted);}
+  .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;width:100%;}
   .footer-left{display:flex;align-items:center;gap:14px;}
   .footer-left img{height:32px;width:auto;display:block;}
-  .footer-group{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);}
-  .footer-group img{height:22px;width:auto;display:block;}
+  .footer-group{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:13px;color:var(--muted);}
+  .footer-group img{height:34px;width:auto;display:block;}
 </style>
 </head>
 <body>
@@ -328,15 +329,17 @@
 
 <footer>
   <div class="wrap">
-    <div class="footer-left">
-      <img src="logo_icon.png" alt="SailySoft Icon">
-      <div>© 2026 SailySoft e.K. – Alle Rechte vorbehalten.</div>
+    <div class="footer-top">
+      <div class="footer-left">
+        <img src="logo_icon.png" alt="SailySoft Icon">
+        <div>© 2026 SailySoft e.K. – Alle Rechte vorbehalten.</div>
+      </div>
+      <div><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></div>
     </div>
     <div class="footer-group">
       <span>Ein Unternehmen der</span>
       <img src="SailyGroup_Logo.png" alt="SailyGroup AG">
     </div>
-    <div><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></div>
   </div>
 </footer>
 
