@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SailySoft – KI-Integration &amp; Prozessautomatisierung für den Mittelstand</title>
+<meta name="description" content="SailySoft integriert KI in bestehende Geschäftsprozesse – von der Potenzialanalyse bis zum laufenden Betrieb. Aus einer Hand, mit 20 Jahren Enterprise-Erfahrung.">
+<link rel="canonical" href="https://www.sailysoft.de/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="SailySoft">
+<meta property="og:title" content="SailySoft – KI-Integration & Prozessautomatisierung für den Mittelstand">
+<meta property="og:description" content="KI-Integration und Prozessautomatisierung für den Mittelstand – von der Potenzialanalyse bis zum laufenden Betrieb. 20 Jahre Enterprise-Erfahrung.">
+<meta property="og:url" content="https://www.sailysoft.de/">
+<meta property="og:image" content="https://www.sailysoft.de/logo_lang.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="logo_icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SailySoft e.K.",
+  "url": "https://www.sailysoft.de/",
+  "logo": "https://www.sailysoft.de/logo_icon.png",
+  "image": "https://www.sailysoft.de/logo_lang.png",
+  "description": "KI-Integration und Prozessautomatisierung für den Mittelstand – Potenzialanalyse, KI-Integration, Prozessautomatisierung, Betrieb und Weiterentwicklung.",
+  "foundingDate": "2006",
+  "email": "info@sailysoft.de",
+  "telephone": "+4915129150645",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Münchner Str. 217",
+    "postalCode": "85757",
+    "addressLocality": "Karlsfeld",
+    "addressCountry": "DE"
+  },
+  "areaServed": "Deutschland",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "SailyGroup AG"
+  },
+  "knowsAbout": ["KI-Integration", "Prozessautomatisierung", "Künstliche Intelligenz", "Individualsoftware", "Chatbots", "Dokumentenautomatisierung"]
+}
+</script>
+<style>
+  @font-face{font-family:'Inter';font-weight:400;font-style:normal;font-display:swap;src:url('fonts/inter-latin-400-normal.woff2') format('woff2');}
+  @font-face{font-family:'Inter';font-weight:500;font-style:normal;font-display:swap;src:url('fonts/inter-latin-500-normal.woff2') format('woff2');}
+  @font-face{font-family:'Inter';font-weight:600;font-style:normal;font-display:swap;src:url('fonts/inter-latin-600-normal.woff2') format('woff2');}
+  @font-face{font-family:'Sora';font-weight:600;font-style:normal;font-display:swap;src:url('fonts/sora-latin-600-normal.woff2') format('woff2');}
+  @font-face{font-family:'Sora';font-weight:700;font-style:normal;font-display:swap;src:url('fonts/sora-latin-700-normal.woff2') format('woff2');}
+  @font-face{font-family:'Sora';font-weight:800;font-style:normal;font-display:swap;src:url('fonts/sora-latin-800-normal.woff2') format('woff2');}
+  :root{
+    --orange:#ff6a00;
+    --orange-dark:#e05800;
+    --ink:#212836;
+    --muted:#6b7180;
+    --line:#eceef2;
+    --bg:#ffffff;
+    --bg-soft:#f7f8fa;
+    --max:1080px;
+  }
+  *{box-sizing:border-box;margin:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);background:var(--bg);
+    line-height:1.65;font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Sora',sans-serif;line-height:1.12;letter-spacing:-0.02em;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  .accent{color:var(--orange);}
+
+  /* NAV */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.9);backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  nav{max-width:var(--max);margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
+  .logo{display:flex;align-items:center;}
+  .logo img{height:26px;width:auto;display:block;}
+  @media (max-width:480px){.logo img{height:20px;}}
+  .nav-links{display:flex;gap:32px;align-items:center;font-size:15px;font-weight:500;color:var(--muted);}
+  .nav-links a:hover{color:var(--ink);}
+  .nav-cta{
+    background:var(--ink);color:#fff;padding:10px 22px;border-radius:999px;
+    font-weight:600;font-size:14px;transition:background .15s;
+  }
+  .nav-cta:hover{background:var(--orange-dark);}
+  @media (max-width:720px){.nav-links a:not(.nav-cta){display:none;}}
+
+  /* HERO */
+  .hero{padding:120px 0 90px;}
+  .hero h1{font-size:clamp(38px,6.2vw,68px);font-weight:800;max-width:16ch;}
+  .hero h1 em{font-style:normal;color:var(--orange);}
+  .hero p{margin:28px 0 40px;font-size:clamp(18px,2.2vw,22px);color:var(--muted);max-width:44ch;}
+  .btn{
+    display:inline-block;padding:16px 34px;border-radius:999px;
+    font-weight:600;font-size:16px;transition:transform .15s, box-shadow .15s, background .15s;
+  }
+  .btn-primary{background:var(--orange);color:#fff;box-shadow:0 14px 30px -12px rgba(255,122,61,.6);}
+  .btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px);}
+  .btn-quiet{color:var(--ink);font-weight:600;padding:16px 10px;}
+  .btn-quiet:hover{color:var(--orange-dark);}
+
+  /* TRUST */
+  .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-soft);}
+  .trust .wrap{
+    display:flex;gap:24px;justify-content:space-between;align-items:center;
+    padding-top:26px;padding-bottom:26px;flex-wrap:wrap;
+    font-size:15px;color:var(--muted);
+  }
+  .trust strong{color:var(--ink);font-weight:600;}
+  @media (max-width:720px){.trust .wrap{flex-direction:column;gap:10px;text-align:center;}}
+
+  /* REFERENZEN */
+  .clients{padding:76px 0 70px;}
+  .clients-head{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;margin-bottom:42px;}
+  .marquee{
+    overflow:hidden;position:relative;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+  }
+  .marquee-track{
+    display:flex;align-items:center;gap:64px;width:max-content;
+    animation:marquee 30s linear infinite;
+  }
+  .marquee:hover .marquee-track{animation-play-state:paused;}
+  .client{
+    font-family:'Sora',sans-serif;font-weight:700;font-size:22px;letter-spacing:.01em;
+    color:#9aa1ad;white-space:nowrap;transition:color .2s;
+  }
+  .client:hover{color:var(--ink);}
+  .tri{
+    width:0;height:0;flex:none;
+    border-left:7px solid transparent;border-right:7px solid transparent;
+    border-bottom:12px solid var(--orange);opacity:.85;
+  }
+  @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  .clients-note{margin-top:36px;text-align:center;font-size:13px;color:#b3b9c4;}
+  @media (max-width:820px){.client{font-size:18px;}.marquee-track{gap:44px;}}
+
+  /* SECTIONS */
+  section{padding:110px 0;}
+  .kicker{
+    font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--orange);margin-bottom:18px;
+  }
+  .section-title{font-size:clamp(28px,4vw,42px);font-weight:700;max-width:22ch;}
+
+  /* LEISTUNGEN */
+  .services{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:64px;border-top:1px solid var(--line);}
+  .service{
+    padding:44px 40px 48px 0;border-bottom:1px solid var(--line);
+  }
+  .service:nth-child(odd){border-right:1px solid var(--line);padding-right:48px;}
+  .service:nth-child(even){padding-left:48px;padding-right:0;}
+  .service .num{font-family:'Sora',sans-serif;font-weight:700;font-size:15px;color:var(--orange);}
+  .service h3{font-size:22px;margin:14px 0 12px;}
+  .service p{color:var(--muted);font-size:16px;max-width:40ch;}
+  @media (max-width:720px){
+    .services{grid-template-columns:1fr;}
+    .service, .service:nth-child(odd), .service:nth-child(even){padding:36px 0;border-right:none;}
+  }
+
+  /* WARUM */
+  .why{background:var(--ink);color:#fff;}
+  .why .kicker{color:var(--orange);}
+  .why .section-title{color:#fff;}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:56px;margin-top:64px;}
+  .why-item h3{font-size:20px;margin-bottom:12px;}
+  .why-item h3::before{
+    content:"";display:block;width:34px;height:3px;background:var(--orange);
+    border-radius:2px;margin-bottom:20px;
+  }
+  .why-item p{color:rgba(255,255,255,.66);font-size:16px;}
+  @media (max-width:820px){.why-grid{grid-template-columns:1fr;gap:40px;}}
+
+  /* KONTAKT */
+  .contact{text-align:left;}
+  .contact h2{font-size:clamp(32px,5vw,54px);font-weight:800;max-width:18ch;}
+  .contact .sub{margin:24px 0 44px;font-size:19px;color:var(--muted);max-width:46ch;}
+  .contact-actions{display:flex;gap:28px;align-items:center;flex-wrap:wrap;}
+  .contact-line{margin-top:44px;font-size:16px;color:var(--muted);}
+  .contact-line a{font-weight:600;color:var(--ink);border-bottom:2px solid var(--orange);padding-bottom:1px;}
+  .contact-line a:hover{color:var(--orange-dark);}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line);padding:34px 0;}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:14px;color:var(--muted);}
+  .footer-left{display:flex;align-items:center;gap:14px;}
+  .footer-left img{height:32px;width:auto;display:block;}
+  .footer-group{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);}
+  .footer-group img{height:22px;width:auto;display:block;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="#top" aria-label="SailySoft">
+      <img src="logo_lang.png" alt="SailySoft">
+    </a>
+    <div class="nav-links">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#warum">Warum SailySoft</a>
+      <a class="nav-cta" href="#kontakt">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <h1>KI, die in Ihrem Unternehmen <em>wirklich arbeitet.</em></h1>
+      <p>SailySoft integriert Künstliche Intelligenz in Ihre bestehenden Geschäftsprozesse – von der Potenzialanalyse bis zum laufenden Betrieb. Aus einer Hand.</p>
+      <a class="btn btn-primary" href="#kontakt">Erstgespräch vereinbaren</a>
+      <a class="btn btn-quiet" href="#leistungen">Leistungen ansehen →</a>
+    </div>
+  </div>
+
+  <!-- TRUST -->
+  <div class="trust">
+    <div class="wrap">
+      <div><strong>Seit 2006</strong> Softwareentwicklung</div>
+      <div>Erprobt in der eigenen Unternehmensgruppe <strong>(SailyGroup AG)</strong></div>
+      <div><strong>DSGVO-konform</strong> &amp; EU-AI-Act-ready</div>
+    </div>
+  </div>
+
+  <!-- REFERENZEN -->
+  <div class="clients">
+    <div class="wrap">
+      <div class="clients-head">Projekte für Konzerne und Marktführer – seit 2006</div>
+      <div class="marquee">
+        <div class="marquee-track">
+          <span class="client">TÜV Rheinland</span><span class="tri"></span>
+          <span class="client">Peek &amp; Cloppenburg</span><span class="tri"></span>
+          <span class="client">Bayer</span><span class="tri"></span>
+          <span class="client">Mercedes-Benz</span><span class="tri"></span>
+          <span class="client">Sanofi</span><span class="tri"></span>
+          <span class="client">Audi</span><span class="tri"></span>
+          <span class="client">TÜV Rheinland</span><span class="tri"></span>
+          <span class="client">Peek &amp; Cloppenburg</span><span class="tri"></span>
+          <span class="client">Bayer</span><span class="tri"></span>
+          <span class="client">Mercedes-Benz</span><span class="tri"></span>
+          <span class="client">Sanofi</span><span class="tri"></span>
+          <span class="client">Audi</span><span class="tri"></span>
+        </div>
+      </div>
+      <div class="clients-note">Teilweise im Auftrag von Agenturen und IT-Dienstleistern.</div>
+    </div>
+  </div>
+
+  <!-- LEISTUNGEN -->
+  <section id="leistungen">
+    <div class="wrap">
+      <div class="kicker">Leistungen</div>
+      <h2 class="section-title">Vier Wege, wie KI Ihre Prozesse messbar entlastet.</h2>
+      <div class="services">
+        <div class="service">
+          <div class="num">01</div>
+          <h3>KI-Potenzialanalyse</h3>
+          <p>Wir analysieren Ihre Abläufe und liefern eine konkrete Automatisierungs-Roadmap – mit klarer Einschätzung, was sich rechnet und was nicht.</p>
+        </div>
+        <div class="service">
+          <div class="num">02</div>
+          <h3>KI-Integration</h3>
+          <p>Chatbots, Dokumenten- und E-Mail-Automatisierung, Wissenssysteme – integriert in Ihre bestehende IT, DSGVO-konform betrieben.</p>
+        </div>
+        <div class="service">
+          <div class="num">03</div>
+          <h3>Prozessautomatisierung</h3>
+          <p>Rechnungsverarbeitung, Angebotswesen, Reporting, Lager und Logistik – branchenerprobt in Handel, Gastronomie und Dienstleistung.</p>
+        </div>
+        <div class="service">
+          <div class="num">04</div>
+          <h3>Betrieb &amp; Weiterentwicklung</h3>
+          <p>Monitoring, Modell-Updates und EU-AI-Act-konforme Dokumentation – damit Ihre Lösung dauerhaft läuft und besser wird.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARUM -->
+  <section class="why" id="warum">
+    <div class="wrap">
+      <div class="kicker">Warum SailySoft</div>
+      <h2 class="section-title">Ergebnisse statt Entwicklerstunden.</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>Erst intern bewiesen</h3>
+          <p>Jede Lösung läuft zuerst produktiv in unserer eigenen Unternehmensgruppe – aus Handel, Logistik und Gastronomie. Sie bekommen nur, was funktioniert.</p>
+        </div>
+        <div class="why-item">
+          <h3>20 Jahre Enterprise-Erfahrung</h3>
+          <p>Projekte für Konzerne wie Bayer, Mercedes-Benz, TÜV Rheinland und Peek &amp; Cloppenburg – Qualitätsmaßstäbe aus dem Konzernumfeld, umgesetzt in mittelstandstauglichen Lösungen.</p>
+        </div>
+        <div class="why-item">
+          <h3>Auf Augenhöhe</h3>
+          <p>Sie sprechen mit einem Unternehmer, nicht nur mit einem Techniker – über Kosten, Prozesse und Rendite. Festpreise statt offener Stundenkonten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="contact" id="kontakt">
+    <div class="wrap">
+      <div class="kicker">Kontakt</div>
+      <h2>Welcher Prozess kostet Sie am meisten Zeit?</h2>
+      <p class="sub">In einem kostenlosen Erstgespräch klären wir, ob und wo sich KI in Ihrem Unternehmen rechnet – ehrlich und konkret.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:info@sailysoft.de?subject=Anfrage%20über%20SailySoft.de">E-Mail schreiben</a>
+        <a class="btn btn-quiet" href="tel:+4915129150645">+49 151 29150645</a>
+      </div>
+      <div class="contact-line">
+        Kulasegaram Varunauthayan · SailySoft e.K. ·
+        <a href="mailto:info@sailysoft.de">info@sailysoft.de</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-left">
+      <img src="logo_icon.png" alt="SailySoft Icon">
+      <div>© 2026 SailySoft e.K. – Alle Rechte vorbehalten.</div>
+    </div>
+    <div class="footer-group">
+      <span>Ein Unternehmen der</span>
+      <img src="SailyGroup_Logo.png" alt="SailyGroup AG">
+    </div>
+    <div><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
